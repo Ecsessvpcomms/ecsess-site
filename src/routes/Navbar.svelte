@@ -1,6 +1,36 @@
-<div class='navbar'>
-    <nav>
-        <a href='/council'>Council</a>
-        <a href='/eventns'>Events</a>
+<script lang='ts'>
+
+    let navItems = [
+    { 
+        name: 'Home',
+        address: '/'
+    }, {
+        name: 'Council',
+        address: '/council'
+    }, {
+        name: 'Events',
+        address: '/events'
+    }]
+
+</script>
+
+<div class='navbar-div'>
+    <nav class='navbar'>
+        {#each navItems as navItem}
+            <a href={navItem.address}><div class='nav-item'><p>{navItem.name}</p></div></a>
+        {/each}
     </nav>
 </div>
+
+<style>
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-item {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+</style>
