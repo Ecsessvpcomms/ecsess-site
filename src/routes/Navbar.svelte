@@ -19,7 +19,7 @@
         {#each navItems as navItem}
             <a href={navItem.address}>
                 <div class='nav-item'>
-                    <p>{navItem.name}</p>
+                    <p class='text'>{navItem.name}</p>
                 </div>
             </a>
         {/each}
@@ -36,5 +36,9 @@
     .nav-item {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .text {
+        color: #ffffff;
     }
 </style>
