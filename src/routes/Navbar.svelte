@@ -39,9 +39,7 @@
     .nav-item {
         padding-left: 1rem;
         padding-right: 1rem;
-    }
-
-    .text {
         color: #ffffff;
     }
+
 </style>
