@@ -10,6 +10,9 @@
     }, {
         name: 'Events',
         address: '/events'
+    }, {
+        name: 'Resources',
+        address: '/resources'
     }]
 
 </script>
