@@ -17,7 +17,11 @@
 <div class='navbar-div'>
     <nav class='navbar'>
         {#each navItems as navItem}
-            <a href={navItem.address}><div class='nav-item'><p>{navItem.name}</p></div></a>
+            <a href={navItem.address}>
+                <div class='nav-item'>
+                    <p>{navItem.name}</p>
+                </div>
+            </a>
         {/each}
     </nav>
 </div>
